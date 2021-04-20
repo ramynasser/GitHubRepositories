@@ -31,6 +31,10 @@
 		CF2A91EB262F567A0063ADAB /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A91EA262F567A0063ADAB /* NetworkConstants.swift */; };
 		CF2A91EE262F569D0063ADAB /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A91ED262F569D0063ADAB /* NetworkClient.swift */; };
 		CF2A91F0262F56B40063ADAB /* NetworkingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A91EF262F56B40063ADAB /* NetworkingType.swift */; };
+		CF2A91F3262F57F10063ADAB /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A91F2262F57F10063ADAB /* Injector.swift */; };
+		CF2A91F5262F58190063ADAB /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A91F4262F58190063ADAB /* Loader.swift */; };
+		CF2A91F7262F58520063ADAB /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A91F6262F58520063ADAB /* Navigator.swift */; };
+		CF2A91F9262F58C60063ADAB /* Navigator + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A91F8262F58C60063ADAB /* Navigator + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,11 @@
 		CF2A91EA262F567A0063ADAB /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		CF2A91ED262F569D0063ADAB /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CF2A91EF262F56B40063ADAB /* NetworkingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingType.swift; sourceTree = "<group>"; };
+		CF2A91F2262F57F10063ADAB /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		CF2A91F4262F58190063ADAB /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		CF2A91F6262F58520063ADAB /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		CF2A91F8262F58C60063ADAB /* Navigator + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Navigator + Extension.swift"; path = "../../../../../../../Documents/Navigator + Extension.swift"; sourceTree = "<group>"; };
+		CF2A91FB262F59830063ADAB /* Navigator + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigator + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +140,8 @@
 		CF2A9198262F52F10063ADAB /* GitHubRepositories */ = {
 			isa = PBXGroup;
 			children = (
+				CF2A91FA262F597B0063ADAB /* Navigator */,
+				CF2A91F1262F57770063ADAB /* Other */,
 				CF2A91CC262F53C20063ADAB /* NetworkClient */,
 				CF2A9199262F52F10063ADAB /* AppDelegate.swift */,
 				CF2A919B262F52F10063ADAB /* SceneDelegate.swift */,
@@ -230,6 +241,25 @@
 				CF2A91EF262F56B40063ADAB /* NetworkingType.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		CF2A91F1262F57770063ADAB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A91F2262F57F10063ADAB /* Injector.swift */,
+				CF2A91F4262F58190063ADAB /* Loader.swift */,
+				CF2A91F8262F58C60063ADAB /* Navigator + Extension.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		CF2A91FA262F597B0063ADAB /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A91F6262F58520063ADAB /* Navigator.swift */,
+				CF2A91FB262F59830063ADAB /* Navigator + Extension.swift */,
+			);
+			path = Navigator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,16 +398,20 @@
 				CF2A919A262F52F10063ADAB /* AppDelegate.swift in Sources */,
 				CF2A91DF262F55F20063ADAB /* EncodingError.swift in Sources */,
 				CF2A91E9262F56650063ADAB /* URLSession+extension.swift in Sources */,
+				CF2A91F7262F58520063ADAB /* Navigator.swift in Sources */,
+				CF2A91F5262F58190063ADAB /* Loader.swift in Sources */,
 				CF2A91F0262F56B40063ADAB /* NetworkingType.swift in Sources */,
 				CF2A91EE262F569D0063ADAB /* NetworkClient.swift in Sources */,
 				CF2A91E7262F564D0063ADAB /* URLRequest+extension.swift in Sources */,
 				CF2A91D8262F55550063ADAB /* HTTPTask.swift in Sources */,
 				CF2A91E1262F56020063ADAB /* NetworkingError.swift in Sources */,
 				CF2A91E4262F56270063ADAB /* Response.swift in Sources */,
+				CF2A91F9262F58C60063ADAB /* Navigator + Extension.swift in Sources */,
 				CF2A91D1262F54F80063ADAB /* URLParameterEncoder.swift in Sources */,
 				CF2A91DC262F558E0063ADAB /* EndPointType.swift in Sources */,
 				CF2A91CF262F54E20063ADAB /* ParameterEncoding.swift in Sources */,
 				CF2A91A4262F52F10063ADAB /* GitHubRepositories.xcdatamodeld in Sources */,
+				CF2A91F3262F57F10063ADAB /* Injector.swift in Sources */,
 				CF2A91D3262F550F0063ADAB /* JSONParameterEncoder.swift in Sources */,
 				CF2A91DA262F55690063ADAB /* HTTPMethod.swift in Sources */,
 				CF2A91EB262F567A0063ADAB /* NetworkConstants.swift in Sources */,
