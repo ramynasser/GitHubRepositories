@@ -7,13 +7,12 @@
 //
 
 import Foundation
-import Foundation
 public typealias NetworkTask = (service: EndPointType?, sessionData: URLSessionDataTaskProtocol?)
 
 open class NetworkClient<R: EndPointType>: NetworkingType {
     private var networkTasks: [NetworkTask] = []
     private let networkQueue =  DispatchQueue(
-        label: "com.instabug.InstabugNetworkClient",
+        label: "com.robusta.RobustaNetworkClient",
         attributes: .concurrent)
     public init() {}
     public func request(
